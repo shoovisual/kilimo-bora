@@ -1,0 +1,2172 @@
+<!doctype html>
+<!--
+* Tabler - Premium and Open Source dashboard template with responsive and high quality UI.
+* @version 1.0.0-beta19
+* @link https://tabler.io
+* Copyright 2018-2023 The Tabler Authors
+* Copyright 2018-2023 codecalm.net Paweł Kuna
+* Licensed under MIT (https://github.com/tabler/tabler/blob/master/LICENSE)
+-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dashboard - Tabler - Premium and Open Source dashboard template with responsive and high quality UI.</title>
+    <!-- CSS files -->
+    <link href="./dist/css/tabler.min.css?1684106062" rel="stylesheet" />
+    <link href="./dist/css/tabler-flags.min.css?1684106062" rel="stylesheet" />
+    <link href="./dist/css/tabler-payments.min.css?1684106062" rel="stylesheet" />
+    <link href="./dist/css/tabler-vendors.min.css?1684106062" rel="stylesheet" />
+    <link href="./dist/css/demo.min.css?1684106062" rel="stylesheet" />
+    <link rel="stylesheet" href="./dist/css/style.css">
+    <style>
+        @import url('https://rsms.me/inter/inter.css');
+
+        :root {
+            --tblr-font-sans-serif: 'Inter Var', -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+        }
+
+        body {
+            font-feature-settings: "cv03", "cv04", "cv11";
+        }
+    </style>
+</head>
+
+<body>
+    <script src="./dist/js/demo-theme.min.js?1684106062"></script>
+    <div class="page">
+        <!-- Navbar -->
+        <div class="sticky-top">
+            <header class="navbar navbar-expand-md sticky-top d-print-none">
+                <div class="container-xl">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu"
+                        aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <h1 class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3">
+                        <a href=".">
+                            <img src="./static/logo.svg" width="110" height="32" alt="Tabler" class="navbar-brand-image">
+                        </a>
+                    </h1>
+                    <div class="my-2 my-md-0 flex-grow-1 flex-md-grow-0 order-first order-md-last">
+                        <form action="./" method="get" autocomplete="off" novalidate>
+                            <div class="input-icon">
+                                <span class="input-icon-addon">
+                                    <!-- Download SVG icon from http://tabler-icons.io/i/search -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24"
+                                        stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                                        <path d="M21 21l-6 -6" />
+                                    </svg>
+                                </span>
+                                <input type="text" value="" class="form-control" placeholder="Search…" aria-label="Search in website">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="navbar-nav flex-row order-md-last">
+                        <div class="d-none d-md-flex">
+                            <div class="nav-item dropdown d-none d-md-flex me-3">
+                                <a href="#" class="nav-link px-0" data-bs-toggle="dropdown" tabindex="-1" aria-label="Show notifications">
+                                    <!-- Download SVG icon from http://tabler-icons.io/i/bell -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24"
+                                        stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" />
+                                        <path d="M9 17v1a3 3 0 0 0 6 0v-1" />
+                                    </svg>
+                                    <span class="badge bg-red"></span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-end dropdown-menu-card">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h3 class="card-title">Last updates</h3>
+                                        </div>
+                                        <div class="list-group list-group-flush list-group-hoverable">
+                                            <div class="list-group-item">
+                                                <div class="row align-items-center">
+                                                    <div class="col-auto"><span
+                                                            class="status-dot status-dot-animated bg-red d-block"></span></div>
+                                                    <div class="col text-truncate">
+                                                        <a href="#" class="text-body d-block">Example 1</a>
+                                                        <div class="d-block text-muted text-truncate mt-n1"> Change deprecated html tags to
+                                                            text decoration classes (#29604) </div>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <a href="#" class="list-group-item-actions">
+                                                            <!-- Download SVG icon from http://tabler-icons.io/i/star -->
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon text-muted" width="24"
+                                                                height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                                <path
+                                                                    d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="list-group-item">
+                                                <div class="row align-items-center">
+                                                    <div class="col-auto"><span class="status-dot d-block"></span></div>
+                                                    <div class="col text-truncate">
+                                                        <a href="#" class="text-body d-block">Example 2</a>
+                                                        <div class="d-block text-muted text-truncate mt-n1"> justify-content:between ⇒
+                                                            justify-content:space-between (#29734) </div>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <a href="#" class="list-group-item-actions show">
+                                                            <!-- Download SVG icon from http://tabler-icons.io/i/star -->
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon text-yellow" width="24"
+                                                                height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                                <path
+                                                                    d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="list-group-item">
+                                                <div class="row align-items-center">
+                                                    <div class="col-auto"><span class="status-dot d-block"></span></div>
+                                                    <div class="col text-truncate">
+                                                        <a href="#" class="text-body d-block">Example 3</a>
+                                                        <div class="d-block text-muted text-truncate mt-n1"> Update change-version.js
+                                                            (#29736) </div>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <a href="#" class="list-group-item-actions">
+                                                            <!-- Download SVG icon from http://tabler-icons.io/i/star -->
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon text-muted" width="24"
+                                                                height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                                <path
+                                                                    d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="list-group-item">
+                                                <div class="row align-items-center">
+                                                    <div class="col-auto"><span
+                                                            class="status-dot status-dot-animated bg-green d-block"></span></div>
+                                                    <div class="col text-truncate">
+                                                        <a href="#" class="text-body d-block">Example 4</a>
+                                                        <div class="d-block text-muted text-truncate mt-n1"> Regenerate package-lock.json
+                                                            (#29730) </div>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <a href="#" class="list-group-item-actions">
+                                                            <!-- Download SVG icon from http://tabler-icons.io/i/star -->
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon text-muted" width="24"
+                                                                height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                                <path
+                                                                    d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown" aria-label="Open user menu">
+                                <span class="avatar avatar-sm"
+                                    style="background-image: url(./dist/img/profile-icon.svg); border-radius: 40px;"></span>
+                                <div class="d-none d-xl-block ps-2">
+                                    <div>Kasobo Kihuna</div>
+                                    <div class="mt-1 small text-muted">Loan Officer</div>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                                <a href="#" class="dropdown-item">Status</a>
+                                <a href="#" class="dropdown-item">Profile</a>
+                                <div class="dropdown-divider"></div>
+                                <a href="#" class="dropdown-item">Settings</a>
+                                <a href="./sign-in.html" class="dropdown-item">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <header class="navbar-expand-md">
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <div class="navbar">
+                        <div class="container-xl">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./">
+                                        <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M6.67863 1.50913C6.67863 0.751376 6.06364 0.136383 5.30588 0.136383H1.64558C0.88782 0.136383 0.272827 0.751376 0.272827 1.50913V5.16944C0.272827 5.9272 0.88782 6.54219 1.64558 6.54219H5.30588C6.06364 6.54219 6.67863 5.9272 6.67863 5.16944V1.50913ZM5.76383 1.50913V5.16944C5.76383 5.42202 5.55847 5.62739 5.30588 5.62739H1.64558C1.39299 5.62739 1.18763 5.42202 1.18763 5.16944V1.50913C1.18763 1.25655 1.39299 1.05118 1.64558 1.05118H5.30588C5.55847 1.05118 5.76383 1.25655 5.76383 1.50913Z"
+                                                    fill="#006838" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M6.67863 8.83048C6.67863 8.07273 6.06364 7.45773 5.30588 7.45773H1.64558C0.88782 7.45773 0.272827 8.07273 0.272827 8.83048V12.4908C0.272827 13.2485 0.88782 13.8635 1.64558 13.8635H5.30588C6.06364 13.8635 6.67863 13.2485 6.67863 12.4908V8.83048ZM5.76383 8.83048V12.4908C5.76383 12.7434 5.55847 12.9487 5.30588 12.9487H1.64558C1.39299 12.9487 1.18763 12.7434 1.18763 12.4908V8.83048C1.18763 8.5779 1.39299 8.37253 1.64558 8.37253H5.30588C5.55847 8.37253 5.76383 8.5779 5.76383 8.83048Z"
+                                                    fill="#006838" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M14 1.50913C14 0.751376 13.385 0.136383 12.6272 0.136383H8.96693C8.20917 0.136383 7.59418 0.751376 7.59418 1.50913V5.16944C7.59418 5.9272 8.20917 6.54219 8.96693 6.54219H12.6272C13.385 6.54219 14 5.9272 14 5.16944V1.50913ZM13.0852 1.50913V5.16944C13.0852 5.42202 12.8798 5.62739 12.6272 5.62739H8.96693C8.71434 5.62739 8.50898 5.42202 8.50898 5.16944V1.50913C8.50898 1.25655 8.71434 1.05118 8.96693 1.05118H12.6272C12.8798 1.05118 13.0852 1.25655 13.0852 1.50913Z"
+                                                    fill="#006838" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M14 8.83048C14 8.07273 13.385 7.45773 12.6272 7.45773H8.96693C8.20917 7.45773 7.59418 8.07273 7.59418 8.83048V12.4908C7.59418 13.2485 8.20917 13.8635 8.96693 13.8635H12.6272C13.385 13.8635 14 13.2485 14 12.4908V8.83048ZM13.0852 8.83048V12.4908C13.0852 12.7434 12.8798 12.9487 12.6272 12.9487H8.96693C8.71434 12.9487 8.50898 12.7434 8.50898 12.4908V8.83048C8.50898 8.5779 8.71434 8.37253 8.96693 8.37253H12.6272C12.8798 8.37253 13.0852 8.5779 13.0852 8.83048Z"
+                                                    fill="#006838" />
+                                            </svg>
+                                        </span>
+                                        <span class="nav-link-title"> Dashboard </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#navbar-base" data-bs-toggle="dropdown"
+                                        data-bs-auto-close="outside" role="button" aria-expanded="false">
+                                        <span
+                                            class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/package -->
+                                            <svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12.8438 2.15815C11.5112 0.825461 9.73924 0.0915222 7.85456 0.0915222C5.96988 0.0915222 4.19793 0.825461 2.86527 2.15815C1.53258 3.49087 0.798645 5.26275 0.798645 7.1474C0.798645 10.96 4.4036 14.1312 6.34031 15.8349C6.60945 16.0716 6.84187 16.2761 7.02704 16.449C7.25903 16.6657 7.55681 16.7741 7.85453 16.7741C8.1523 16.7741 8.45002 16.6657 8.68204 16.449C8.86722 16.276 9.09963 16.0716 9.36877 15.8349C11.3055 14.1312 14.9104 10.96 14.9104 7.1474C14.9104 5.26275 14.1765 3.49087 12.8438 2.15815ZM8.72329 15.1011C8.44826 15.3431 8.21076 15.552 8.01493 15.7349C7.92497 15.8189 7.78408 15.8189 7.69409 15.7349C7.49829 15.552 7.26076 15.343 6.98572 15.1011C5.16497 13.4995 1.77582 10.5181 1.77582 7.14744C1.77582 3.79566 4.50268 1.06879 7.85449 1.06879C11.2063 1.06879 13.9331 3.79566 13.9331 7.14744C13.9332 10.5181 10.544 13.4995 8.72329 15.1011Z"
+                                                    fill="#006838" />
+                                                <path
+                                                    d="M7.85457 3.77145C6.14001 3.77145 4.74512 5.16631 4.74512 6.88088C4.74512 8.59544 6.14001 9.9903 7.85457 9.9903C9.56914 9.9903 10.964 8.59544 10.964 6.88088C10.964 5.16631 9.56914 3.77145 7.85457 3.77145ZM7.85457 9.01303C6.67887 9.01303 5.72236 8.05652 5.72236 6.88085C5.72236 5.70517 6.67887 4.74866 7.85457 4.74866C9.03028 4.74866 9.98676 5.70517 9.98676 6.88085C9.98676 8.05652 9.03028 9.01303 7.85457 9.01303Z"
+                                                    fill="#006838" />
+                                            </svg>
+                                        </span>
+                                        <span class="nav-link-title"> Locations </span>
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <div class="dropdown-menu-columns">
+                                            <div class="dropdown-menu-column">
+                                                <a class="dropdown-item" href="#"> Accordion </a>
+                                                <a class="dropdown-item" href="#"> Blank page </a>
+                                                <a class="dropdown-item" href="#"> Badges </a>
+                                                <a class="dropdown-item" href="#"> Buttons </a>
+                                                <div class="dropend">
+                                                    <a class="dropdown-item dropdown-toggle" href="#sidebar-cards" data-bs-toggle="dropdown"
+                                                        data-bs-auto-close="outside" role="button" aria-expanded="false"> Cards </a>
+                                                    <div class="dropdown-menu">
+                                                        <a href="#" class="dropdown-item"> Sample cards </a>
+                                                        <a href="#" class="dropdown-item"> Card actions </a>
+                                                        <a href="#" class="dropdown-item"> Cards Masonry </a>
+                                                    </div>
+                                                </div>
+                                                <a class="dropdown-item" href="#"> Colors </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./form-elements.html">
+                                        <span
+                                            class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/checkbox -->
+                                            <svg width="15" height="19" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M14.1669 16.7618C13.9427 15.8328 13.1088 15.16 12.1355 15.16H10.0993L9.46408 13.3993C10.4838 12.757 11.1622 11.6435 11.211 10.3662L11.2214 10.0922C16.6678 8.51481 16.1458 4.17988 10.1765 3.03295L10.0686 1.92455C9.98813 1.11242 9.31655 0.5 8.50645 0.5H6.49347C5.68334 0.5 5.01175 1.11242 4.93123 1.92543L4.82326 3.03499C3.54501 3.2828 2.05855 3.78093 1.06501 4.63571C-0.869334 6.29988 -0.284965 8.91534 3.77851 10.0922C3.78193 10.1817 3.78538 10.2725 3.78898 10.3662C3.83709 11.626 4.50079 12.7474 5.53608 13.3992L4.9006 15.16H2.86442C1.89199 15.16 1.05737 15.832 0.832941 16.7618L0.571981 17.8485C0.50402 18.1315 0.676609 18.4165 0.957525 18.485C1.23837 18.5536 1.52131 18.3796 1.58924 18.0965L1.84974 17.0119C1.96707 16.5424 2.38401 16.2147 2.86442 16.2147H3.34831V17.9725C3.34831 18.2637 3.58261 18.4998 3.87162 18.4998C4.16063 18.4998 4.39494 18.2637 4.39494 17.9725V16.2147H5.07337C6.47337 17.3377 8.52351 17.3401 9.92656 16.2147H10.605V17.9725C10.605 18.2637 10.8393 18.4998 11.1283 18.4998C11.4173 18.4998 11.6516 18.2637 11.6516 17.9725V16.2147H12.1355C12.6159 16.2147 13.0329 16.5424 13.1502 17.0119L13.4107 18.0966C13.4787 18.3796 13.7615 18.5536 14.0424 18.4851C14.3233 18.4166 14.4959 18.1315 14.4279 17.8485L14.1669 16.7618ZM5.97277 2.02928C5.9996 1.75872 6.22344 1.55468 6.49347 1.55468H8.50645C8.77648 1.55468 9.00032 1.75872 9.02705 2.02837L9.10914 2.87183C8.04025 2.75265 6.95106 2.75356 5.89068 2.87302L5.97277 2.02928ZM1.74456 5.43779C2.45183 4.82924 3.61105 4.34451 5.00865 4.0729C6.47526 3.78782 8.11023 3.76317 9.61225 4.00339C10.9022 4.21004 12.049 4.61134 12.8415 5.13344C15.0159 6.56577 13.733 8.16251 11.2641 8.97613L11.3721 6.1452C11.3816 5.89584 11.2164 5.6739 10.9761 5.61336C8.70406 5.04099 6.30249 5.04042 4.03019 5.61174C3.76923 5.67404 3.60048 5.92322 3.63079 6.18535C3.66464 6.96605 3.56541 4.48106 3.73602 8.97616C1.63923 8.28524 0.0799253 6.86987 1.74456 5.43779ZM4.8348 10.3257C4.78725 9.07952 4.73795 7.78153 4.69166 6.5394C6.53788 6.13771 8.4634 6.13778 10.3096 6.53972C10.2934 6.96479 10.182 9.88354 10.1651 10.3257C10.0918 12.2455 8.12994 13.4346 6.42711 12.6849C6.39662 12.6687 6.37761 12.6609 6.35807 12.6539C5.48584 12.2396 4.87437 11.3633 4.8348 10.3257ZM5.88743 15.5115L6.4956 13.8261C7.15086 14.0109 7.84903 14.0109 8.50443 13.8262L9.11245 15.5115C8.14847 16.1675 6.85264 16.1682 5.88743 15.5115Z"
+                                                    fill="#006838" />
+                                            </svg>
+                                        </span>
+                                        <span class="nav-link-title"> Farmer Management </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#navbar-extra" data-bs-toggle="dropdown"
+                                        data-bs-auto-close="outside" role="button" aria-expanded="false">
+                                        <span
+                                            class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/star -->
+                                            <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M10.1805 4.07061H4.81952C4.64154 4.07061 4.49725 3.92632 4.49725 3.74834C4.49725 3.57037 4.64154 3.42608 4.81952 3.42608H10.1805C10.3585 3.42608 10.5028 3.57037 10.5028 3.74834C10.5028 3.92632 10.3585 4.07061 10.1805 4.07061Z"
+                                                    fill="#006838" />
+                                                <path
+                                                    d="M14.6777 5.85761C14.8557 5.85761 15 5.71332 15 5.53534V3.74835C15 3.61806 14.9216 3.50061 14.8013 3.45069L7.62352 0.472371C7.54444 0.439558 7.45559 0.439558 7.37648 0.472371L0.19875 3.45069C0.0784277 3.50061 0 3.61806 0 3.74835V5.53534C0 5.71332 0.144287 5.85761 0.322266 5.85761H1.22112V11.1697H0.947725C0.769746 11.1697 0.625459 11.314 0.625459 11.492V12.9567H0.322266C0.144287 12.9567 0 13.101 0 13.2789V15.1255C0 15.3035 0.144287 15.4478 0.322266 15.4478H14.6777C14.8557 15.4478 15 15.3035 15 15.1255V13.2789C15 13.101 14.8557 12.9567 14.6777 12.9567H14.3745V11.492C14.3745 11.314 14.2303 11.1697 14.0523 11.1697H13.7789V5.85761H14.6777ZM0.644531 3.96353L7.5 1.11892L14.3555 3.96353V5.21307H13.4566H11.6696H3.33038H1.54339H0.644531V3.96353ZM11.074 11.1697C10.896 11.1697 10.7517 11.314 10.7517 11.492V12.9567H4.24828V11.492C4.24828 11.314 4.10399 11.1697 3.92602 11.1697H3.65265V5.85761H11.3474V11.1697H11.074ZM1.86565 5.85761H3.00812V11.1697H1.86565V5.85761ZM1.26999 11.8142H1.54339H3.33038H3.60375V12.9567H1.26999V11.8142ZM14.3555 14.8032H0.644531V13.6012H0.947725H3.92602H11.074H14.0523H14.3555V14.8032ZM11.3963 12.9567V11.8142H11.6696H13.4566H13.73V12.9567H11.3963ZM13.1343 11.1697H11.9919V5.85761H13.1343V11.1697Z"
+                                                    fill="#006838" />
+                                                <path
+                                                    d="M7.5 9.08489C7.18503 9.08489 6.92877 8.82863 6.92877 8.51366C6.92877 8.19869 7.18503 7.94243 7.5 7.94243C7.81497 7.94243 8.07123 8.19869 8.07123 8.51366C8.07123 8.69164 8.21552 8.83592 8.3935 8.83592C8.57148 8.83592 8.71576 8.69164 8.71576 8.51366C8.71576 7.95485 8.33669 7.4832 7.82227 7.34158V7.0245C7.82227 6.84652 7.67798 6.70223 7.5 6.70223C7.32202 6.70223 7.17774 6.84652 7.17774 7.0245V7.34158C6.66331 7.4832 6.28424 7.95485 6.28424 8.51366C6.28424 9.18403 6.82963 9.72942 7.5 9.72942C7.81497 9.72942 8.07123 9.98568 8.07123 10.3006C8.07123 10.6156 7.81497 10.8719 7.5 10.8719C7.18503 10.8719 6.92877 10.6156 6.92877 10.3006C6.92877 10.1226 6.78448 9.97836 6.60651 9.97836C6.42853 9.97836 6.28424 10.1226 6.28424 10.3006C6.28424 10.8594 6.66331 11.3311 7.17774 11.4727V11.7898C7.17774 11.9678 7.32202 12.112 7.5 12.112C7.67798 12.112 7.82227 11.9678 7.82227 11.7898V11.4727C8.33669 11.3311 8.71576 10.8594 8.71576 10.3006C8.71576 9.63025 8.17037 9.08489 7.5 9.08489Z"
+                                                    fill="#006838" />
+                                            </svg>
+                                        </span>
+                                        <span class="nav-link-title"> Financial Institutions </span>
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <div class="dropdown-menu-columns">
+                                            <div class="dropdown-menu-column">
+                                                <a class="dropdown-item" href="#">Banks</a>
+                                                <a class="dropdown-item" href="#">Microfinance</a>
+                                                <a class="dropdown-item" href="#"> Bank Agents </a>
+                                                <a class="dropdown-item" href="#"> Gallery </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="#">
+                                        <span
+                                            class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/lifebuoy -->
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.75441 15.1593L0.558716 11.8588L1.66858 10.2225C2.67169 8.74391 4.5009 7.94426 6.34191 8.18056H8.50424C9.10396 8.18056 9.62644 8.49646 9.8968 8.96144L12.3161 7.60909C12.772 7.35454 13.324 7.28913 13.8326 7.4306C14.34 7.57157 14.7675 7.90928 15.0046 8.35651C15.4408 9.17898 15.1559 10.1794 14.3416 10.6834L11.8408 12.233C10.4499 13.0946 8.83575 13.5499 7.17337 13.5499H6.80324C5.58287 13.5499 4.36894 13.8374 3.29287 14.3815L1.75387 15.1598L1.75441 15.1593ZM1.74153 11.9942L2.36057 13.7025L2.78756 13.4865C4.02295 12.8618 5.4021 12.5353 6.80324 12.5353H7.17444C8.6244 12.5353 10.0427 12.1352 11.255 11.3837L13.7086 9.86352C14.0578 9.647 14.2327 9.2236 14.0702 8.85952C13.9693 8.63439 13.7752 8.47111 13.5305 8.40316C13.3026 8.33978 13.0665 8.36817 12.8627 8.48176L10.0411 10.0592C9.86354 10.7042 9.24236 11.1819 8.50478 11.1819H6.92179C6.62568 11.1819 6.38536 10.9547 6.38536 10.6748C6.38536 10.3949 6.62568 10.1678 6.92179 10.1678H8.50478C8.78855 10.1678 9.01921 9.94972 9.01921 9.68148C9.01921 9.41324 8.78855 9.1952 8.50478 9.1952L6.22926 9.19013C4.79111 8.99592 3.35617 9.61505 2.57246 10.7707L1.74207 11.9947L1.74153 11.9942Z"
+                                                    fill="#006838" />
+                                                <path
+                                                    d="M0.509039 10.167L0.508531 10.1672C0.227677 10.2568 0.076853 10.5447 0.171656 10.8101L1.79054 15.3436C1.88535 15.6091 2.18988 15.7517 2.47073 15.6621L2.47124 15.6619C2.75209 15.5723 2.90292 15.2844 2.80811 15.0189L1.18923 10.4855C1.09442 10.22 0.789893 10.0774 0.509039 10.167Z"
+                                                    fill="#006838" />
+                                                <path
+                                                    d="M11.1622 9.41374L10.4751 8.63539C11.4567 7.86161 12.0194 6.72527 12.0194 5.51895C12.0194 3.28227 10.0942 1.46241 7.72802 1.46241C5.36185 1.46241 3.43662 3.28227 3.43662 5.51895C3.43662 6.65124 3.91726 7.70188 4.79109 8.47668L4.05673 9.21649C2.98066 8.26168 2.36377 6.9139 2.36377 5.51895C2.36377 2.72247 4.77017 0.447762 7.72802 0.447762C10.6859 0.447762 13.0923 2.72247 13.0923 5.51845C13.0923 7.02697 12.3885 8.44626 11.1622 9.41374Z"
+                                                    fill="#006838" />
+                                                <path
+                                                    d="M7.64648 7.83169H6.86061C6.56451 7.83169 6.32419 7.60453 6.32419 7.32462C6.32419 7.04472 6.56451 6.81756 6.86061 6.81756H7.70978C8.00535 6.81756 8.2462 6.59039 8.2462 6.31049C8.2462 6.02653 7.99891 5.79683 7.69744 5.80342C7.22646 5.81356 6.75118 5.68679 6.47814 5.32424C5.55227 4.09409 6.46956 2.76101 7.70978 2.76101H8.59488C8.89098 2.76101 9.1313 2.98818 9.1313 3.26808C9.1313 3.54798 8.89098 3.77515 8.59488 3.77515H7.70978C7.41421 3.77515 7.17335 4.00231 7.17335 4.28221C7.17335 4.56212 7.41421 4.78928 7.70978 4.78928C8.70216 4.78928 9.48749 5.64268 9.28794 6.61371C9.13935 7.33578 8.42483 7.83169 7.64648 7.83169Z"
+                                                    fill="#006838" />
+                                                <path
+                                                    d="M8.26444 3.26808H7.19159V2.47705C7.19159 2.19715 7.43191 1.96998 7.72801 1.96998C8.02412 1.96998 8.26444 2.19715 8.26444 2.47705V3.26808Z"
+                                                    fill="#006838" />
+                                                <path
+                                                    d="M1.12944 7.99091C1.4257 7.99091 1.66587 7.76388 1.66587 7.48384C1.66587 7.20379 1.4257 6.97677 1.12944 6.97677C0.833183 6.97677 0.593018 7.20379 0.593018 7.48384C0.593018 7.76388 0.833183 7.99091 1.12944 7.99091Z"
+                                                    fill="#006838" />
+                                                <path
+                                                    d="M14.2928 3.61744C14.589 3.61744 14.8292 3.39042 14.8292 3.11037C14.8292 2.83032 14.589 2.6033 14.2928 2.6033C13.9965 2.6033 13.7563 2.83032 13.7563 3.11037C13.7563 3.39042 13.9965 3.61744 14.2928 3.61744Z"
+                                                    fill="#006838" />
+                                            </svg>
+                                        </span>
+                                        <span class="nav-link-title"> Loans Management </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="#">
+                                        <span
+                                            class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/lifebuoy -->
+                                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 2.94943H13.9477" stroke="#006838" stroke-miterlimit="10"
+                                                    stroke-linecap="round" />
+                                                <path d="M1 7.88442H13.9477" stroke="#006838" stroke-miterlimit="10"
+                                                    stroke-linecap="round" />
+                                                <path d="M1 12.8189H13.9477" stroke="#006838" stroke-miterlimit="10"
+                                                    stroke-linecap="round" />
+                                                <path
+                                                    d="M4.92636 4.45111C5.75571 4.45111 6.42804 3.77879 6.42804 2.94944C6.42804 2.12008 5.75571 1.44776 4.92636 1.44776C4.09701 1.44776 3.42468 2.12008 3.42468 2.94944C3.42468 3.77879 4.09701 4.45111 4.92636 4.45111Z"
+                                                    fill="white" stroke="#006838" stroke-miterlimit="10" />
+                                                <path
+                                                    d="M10.8631 9.38561C11.6925 9.38561 12.3648 8.71329 12.3648 7.88393C12.3648 7.05458 11.6925 6.38226 10.8631 6.38226C10.0338 6.38226 9.36145 7.05458 9.36145 7.88393C9.36145 8.71329 10.0338 9.38561 10.8631 9.38561Z"
+                                                    fill="white" stroke="#006838" stroke-miterlimit="10" />
+                                                <path
+                                                    d="M4.39908 14.3206C5.22843 14.3206 5.90075 13.6483 5.90075 12.8189C5.90075 11.9896 5.22843 11.3173 4.39908 11.3173C3.56972 11.3173 2.8974 11.9896 2.8974 12.8189C2.8974 13.6483 3.56972 14.3206 4.39908 14.3206Z"
+                                                    fill="white" stroke="#006838" stroke-miterlimit="10" />
+                                            </svg>
+                                        </span>
+                                        <span class="nav-link-title"> Configurations </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="page-wrapper">
+            <!-- Page header -->
+            <div class="page-header d-print-none">
+                <div class="container-xl">
+                    <div class="row g-2 align-items-center">
+                        <div class="col">
+                            <ul class="d-flex breadcrumbs">
+                                <li><a href="index.html">Home</a></li>
+                                <li>/</li>
+                                <li>Loans Managements</li>
+                            </ul>
+                        </div>
+                        <!-- Page title actions -->
+                    </div>
+                </div>
+            </div>
+            <div class="dash-body py-10" style="margin-top: 30px;">
+                <div class="container">
+                    <div class="dash-cards">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <img src="./dist/img/group-icon.svg" alt=""
+                                            style="background: linear-gradient(208.36deg, #8BC53F 2.58%, #006838 147.08%);">
+                                        <div class="card-head">245</div>
+                                        <div class="sub-header">Total Number of application</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <img src="./dist/img/pending-icon.svg" alt=""
+                                            style="background: linear-gradient(151.36deg, #7CF2EB -7.75%, #1E6888 125.42%);">
+                                        <div class="card-head">245</div>
+                                        <div class="sub-header">Pending loans</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <img src="./dist/img/approved-icon.svg" alt=""
+                                            style="background: linear-gradient(151.36deg, #7CF2EB -7.75%, #1E6888 125.42%);">
+                                        <div class="card-head">245</div>
+                                        <div class="sub-header">Approved loans</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="background-color: #006838;">
+                                    <div class="card-body align-items-center">
+                                        <div class="sub-header-2 color-white">Total Loans Balance</div>
+                                        <div class="card-head-2 color-white">Tsh. <br> 46,386,000</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="background-color: #006838;">
+                                    <div class="card-body align-items-center">
+                                        <div class="sub-header-2 color-white">Non perfoming loans</div>
+                                        <div class="card-head-2 color-white">Tsh. <br> 46,386,000</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Page body -->
+            <div id="loans-body" class="loans-body page-body">
+                <div class="container" data-aos="zoom-in">
+                    <div class="text-left who-tabs row">
+                        <nav class="col-lg-2">
+                            <ul class="nav-tabs" id="nav-tab" role="tablist">
+                                <li class="tab-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-1" type="button"
+                                    role="tab" aria-controls="nav-home" aria-selected="true"><span>Application</span>
+                                </li>
+                                <li class="tab-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-2" type="button"
+                                    role="tab" aria-controls="nav-profile" aria-selected="false"><span>Scoring </span>
+                                </li>
+                                <li class="tab-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-3" type="button"
+                                    role="tab" aria-controls="nav-contact" aria-selected="false"><span>Loan Status</span>
+                                </li>
+                                <li class="tab-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-3" type="button"
+                                    role="tab" aria-controls="nav-contact" aria-selected="false"><span>Approved Loans</span>
+                                </li>
+                                <li class="tab-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-3" type="button"
+                                    role="tab" aria-controls="nav-contact" aria-selected="false"><span>Disbursed Loans</span>
+                                </li>
+                                <li class="tab-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-3" type="button"
+                                    role="tab" aria-controls="nav-contact" aria-selected="false"><span>Loans Monitoring</span>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="tab-content col-lg-10" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-1" role="tabpanel" aria-labelledby="nav-home-tab">
+                                <div class="container-xl">
+                                    <div class="row row-deck row-cards">
+                                        <div class="col-12">
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h3 class="card-title">New Loans Aplication </h3>
+                                                </div>
+                                                <div class="card-body border-bottom py-3">
+                                                    <div class="d-flex">
+                                                        <div class="text-muted"> Show <div class="mx-2 d-inline-block">
+                                                                <input type="text" class="form-control form-control-sm" value="8" size="3"
+                                                                    aria-label="Invoices count">
+                                                            </div> entries </div>
+                                                        <div class="ms-auto text-muted"> Search: <div class="ms-2 d-inline-block">
+                                                                <input type="text" class="form-control form-control-sm"
+                                                                    aria-label="Search invoice">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="table-responsive">
+                                                    <table class="table card-table table-vcenter text-nowrap datatable">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="w-1">No.
+                                                                    <!-- Download SVG icon from http://tabler-icons.io/i/chevron-up -->
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-sm icon-thick"
+                                                                        width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                                        stroke="currentColor" fill="none" stroke-linecap="round"
+                                                                        stroke-linejoin="round">
+                                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                                        <path d="M6 15l6 -6l6 6" />
+                                                                    </svg>
+                                                                </th>
+                                                                <th>Name</th>
+                                                                <th>Phone</th>
+                                                                <th>Amount</th>
+                                                                <th>Score</th>
+                                                                <th>Interest</th>
+                                                                <th>Period</th>
+                                                                <th></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><span class="text-muted">1</span></td>
+                                                                <td><a href="invoice.html" class="text-reset" tabindex="-1">Muziney
+                                                                        Habibi</a></td>
+                                                                <td>
+                                                                    <span>+255658 636 369</span>
+                                                                </td>
+                                                                <td>100,887</td>
+                                                                <td class="d-flex align-items-center" style="margin-top: 5px;">
+                                                                    <div class="progress progress-xs">
+                                                                        <div class="progress-bar bg-success" style="width: 100%"></div>
+                                                                    </div><span class="p-2" style="font-size: 12px;">89%</span>
+                                                                </td>
+                                                                <td>10,000</td>
+                                                                <td>2</td>
+                                                                <td class="text-end">
+                                                                    <span class="dropdown">
+                                                                        <button class="btn dropdown-toggle align-text-top"
+                                                                            data-bs-boundary="viewport"
+                                                                            data-bs-toggle="dropdown">Actions</button>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <a class="dropdown-item" href="#"> Action </a>
+                                                                            <a class="dropdown-item" href="#"> Another action </a>
+                                                                        </div>
+                                                                    </span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><span class="text-muted">2</span></td>
+                                                                <td><a href="invoice.html" class="text-reset" tabindex="-1">Muziney
+                                                                        Habibi</a></td>
+                                                                <td>
+                                                                    <span>+255658 636 369</span>
+                                                                </td>
+                                                                <td>100,887</td>
+                                                                <td class="d-flex align-items-center" style="margin-top: 5px;">
+                                                                    <div class="progress progress-xs">
+                                                                        <div class="progress-bar bg-primary" style="width: 71.0%"></div>
+                                                                    </div><span class="p-2" style="font-size: 12px;">89%</span>
+                                                                </td>
+                                                                <td>10,000</td>
+                                                                <td>2</td>
+                                                                <td class="text-end">
+                                                                    <span class="dropdown">
+                                                                        <button class="btn dropdown-toggle align-text-top"
+                                                                            data-bs-boundary="viewport"
+                                                                            data-bs-toggle="dropdown">Actions</button>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <a class="dropdown-item" href="#"> Action </a>
+                                                                            <a class="dropdown-item" href="#"> Another action </a>
+                                                                        </div>
+                                                                    </span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><span class="text-muted">3</span></td>
+                                                                <td><a href="invoice.html" class="text-reset" tabindex="-1">Muziney
+                                                                        Habibi</a></td>
+                                                                <td>
+                                                                    <span>+255658 636 369</span>
+                                                                </td>
+                                                                <td>100,887</td>
+                                                                <td class="d-flex align-items-center" style="margin-top: 5px;">
+                                                                    <div class="progress progress-xs">
+                                                                        <div class="progress-bar bg-primary" style="width: 71.0%"></div>
+                                                                    </div><span class="p-2" style="font-size: 12px;">89%</span>
+                                                                </td>
+                                                                <td>10,000</td>
+                                                                <td>2</td>
+                                                                <td class="text-end">
+                                                                    <span class="dropdown">
+                                                                        <button class="btn dropdown-toggle align-text-top"
+                                                                            data-bs-boundary="viewport"
+                                                                            data-bs-toggle="dropdown">Actions</button>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <a class="dropdown-item" href="#"> Action </a>
+                                                                            <a class="dropdown-item" href="#"> Another action </a>
+                                                                        </div>
+                                                                    </span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><span class="text-muted">4</span></td>
+                                                                <td><a href="invoice.html" class="text-reset" tabindex="-1">Muziney
+                                                                        Habibi</a></td>
+                                                                <td>
+                                                                    <span>+255658 636 369</span>
+                                                                </td>
+                                                                <td>100,887</td>
+                                                                <td class="d-flex align-items-center" style="margin-top: 5px;">
+                                                                    <div class="progress progress-xs">
+                                                                        <div class="progress-bar bg-primary" style="width: 90%"></div>
+                                                                    </div><span class="p-2" style="font-size: 12px;">89%</span>
+                                                                </td>
+                                                                <td>10,000</td>
+                                                                <td>2</td>
+                                                                <td class="text-end">
+                                                                    <span class="dropdown">
+                                                                        <button class="btn dropdown-toggle align-text-top"
+                                                                            data-bs-boundary="viewport"
+                                                                            data-bs-toggle="dropdown">Actions</button>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <a class="dropdown-item" href="#"> Action </a>
+                                                                            <a class="dropdown-item" href="#"> Another action </a>
+                                                                        </div>
+                                                                    </span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><span class="text-muted">5</span></td>
+                                                                <td><a href="invoice.html" class="text-reset" tabindex="-1">Muziney
+                                                                        Habibi</a></td>
+                                                                <td>
+                                                                    <span>+255658 636 369</span>
+                                                                </td>
+                                                                <td>100,887</td>
+                                                                <td class="d-flex align-items-center" style="margin-top: 5px;">
+                                                                    <div class="progress progress-xs">
+                                                                        <div class="progress-bar bg-primary" style="width: 71.0%"></div>
+                                                                    </div><span class="p-2" style="font-size: 12px;">89%</span>
+                                                                </td>
+                                                                <td>10,000</td>
+                                                                <td>2</td>
+                                                                <td class="text-end">
+                                                                    <span class="dropdown">
+                                                                        <button class="btn dropdown-toggle align-text-top"
+                                                                            data-bs-boundary="viewport"
+                                                                            data-bs-toggle="dropdown">Actions</button>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <a class="dropdown-item" href="#"> Action </a>
+                                                                            <a class="dropdown-item" href="#"> Another action </a>
+                                                                        </div>
+                                                                    </span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><span class="text-muted">6</span></td>
+                                                                <td><a href="invoice.html" class="text-reset" tabindex="-1">Muziney
+                                                                        Habibi</a></td>
+                                                                <td>
+                                                                    <span>+255658 636 369</span>
+                                                                </td>
+                                                                <td>100,887</td>
+                                                                <td class="d-flex align-items-center" style="margin-top: 5px;">
+                                                                    <div class="progress progress-xs">
+                                                                        <div class="progress-bar bg-secondary" style="width: 42%"></div>
+                                                                    </div><span class="p-2" style="font-size: 12px;">89%</span>
+                                                                </td>
+                                                                <td>10,000</td>
+                                                                <td>2</td>
+                                                                <td class="text-end">
+                                                                    <span class="dropdown">
+                                                                        <button class="btn dropdown-toggle align-text-top"
+                                                                            data-bs-boundary="viewport"
+                                                                            data-bs-toggle="dropdown">Actions</button>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <a class="dropdown-item" href="#"> Action </a>
+                                                                            <a class="dropdown-item" href="#"> Another action </a>
+                                                                        </div>
+                                                                    </span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><span class="text-muted">7</span></td>
+                                                                <td><a href="invoice.html" class="text-reset" tabindex="-1">Muziney
+                                                                        Habibi</a></td>
+                                                                <td>
+                                                                    <span>+255658 636 369</span>
+                                                                </td>
+                                                                <td>100,887</td>
+                                                                <td class="d-flex align-items-center" style="margin-top: 5px;">
+                                                                    <div class="progress progress-xs">
+                                                                        <div class="progress-bar bg-danger" style="width: 15.5%"></div>
+                                                                    </div><span class="p-2" style="font-size: 12px;">89%</span>
+                                                                </td>
+                                                                <td>10,000</td>
+                                                                <td>2</td>
+                                                                <td class="text-end">
+                                                                    <span class="dropdown">
+                                                                        <button class="btn dropdown-toggle align-text-top"
+                                                                            data-bs-boundary="viewport"
+                                                                            data-bs-toggle="dropdown">Actions</button>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <a class="dropdown-item" href="#"> Action </a>
+                                                                            <a class="dropdown-item" href="#"> Another action </a>
+                                                                        </div>
+                                                                    </span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><span class="text-muted">8</span></td>
+                                                                <td><a href="invoice.html" class="text-reset" tabindex="-1">Muziney
+                                                                        Habibi</a></td>
+                                                                <td>
+                                                                    <span>+255658 636 369</span>
+                                                                </td>
+                                                                <td>100,887</td>
+                                                                <td class="d-flex align-items-center" style="margin-top: 5px;">
+                                                                    <div class="progress progress-xs">
+                                                                        <div class="progress-bar bg-success" style="width: 100%"></div>
+                                                                    </div><span class="p-2" style="font-size: 12px;">89%</span>
+                                                                </td>
+                                                                <td>10,000</td>
+                                                                <td>2</td>
+                                                                <td class="text-end">
+                                                                    <span class="dropdown">
+                                                                        <button class="btn dropdown-toggle align-text-top"
+                                                                            data-bs-boundary="viewport"
+                                                                            data-bs-toggle="dropdown">Actions</button>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <a class="dropdown-item" href="#"> Action </a>
+                                                                            <a class="dropdown-item" href="#"> Another action </a>
+                                                                        </div>
+                                                                    </span>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="card-footer d-flex align-items-center">
+                                                    <p class="m-0 text-muted">Showing <span>1</span> to <span>8</span> of <span>16</span>
+                                                        entries</p>
+                                                    <ul class="pagination m-0 ms-auto">
+                                                        <li class="page-item disabled">
+                                                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                                                                <!-- Download SVG icon from http://tabler-icons.io/i/chevron-left -->
+                                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
+                                                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                                    <path d="M15 6l-6 6l6 6" />
+                                                                </svg> prev </a>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#"> next
+                                                                <!-- Download SVG icon from http://tabler-icons.io/i/chevron-right -->
+                                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
+                                                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                                    <path d="M9 6l6 6l-6 6" />
+                                                                </svg>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-2" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                <div class="container-xl">
+                                    <div class="row row-deck row-cards">
+                                        <div class="col-12">
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h3 class="card-title">New Loans Aplication </h3>
+                                                </div>
+                                                <div class="card-body border-bottom py-3">
+                                                    <div class="d-flex">
+                                                        <div class="text-muted"> Show <div class="mx-2 d-inline-block">
+                                                                <input type="text" class="form-control form-control-sm" value="8" size="3"
+                                                                    aria-label="Invoices count">
+                                                            </div> entries </div>
+                                                        <div class="ms-auto text-muted"> Search: <div class="ms-2 d-inline-block">
+                                                                <input type="text" class="form-control form-control-sm"
+                                                                    aria-label="Search invoice">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="table-responsive">
+                                                    <table class="table card-table table-vcenter text-nowrap datatable">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="w-1">No.
+                                                                    <!-- Download SVG icon from http://tabler-icons.io/i/chevron-up -->
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-sm icon-thick"
+                                                                        width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                                        stroke="currentColor" fill="none" stroke-linecap="round"
+                                                                        stroke-linejoin="round">
+                                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                                        <path d="M6 15l6 -6l6 6" />
+                                                                    </svg>
+                                                                </th>
+                                                                <th>Name</th>
+                                                                <th>Phone</th>
+                                                                <th>Amount</th>
+                                                                <th>Score</th>
+                                                                <th>Interest</th>
+                                                                <th>Period</th>
+                                                                <th></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><span class="text-muted">1</span></td>
+                                                                <td><a href="invoice.html" class="text-reset" tabindex="-1">Muziney
+                                                                        Habibi</a></td>
+                                                                <td>
+                                                                    <span>+255658 636 369</span>
+                                                                </td>
+                                                                <td>100,887</td>
+                                                                <td class="d-flex align-items-center" style="margin-top: 5px;">
+                                                                    <div class="progress progress-xs">
+                                                                        <div class="progress-bar bg-success" style="width: 100%"></div>
+                                                                    </div><span class="p-2" style="font-size: 12px;">89%</span>
+                                                                </td>
+                                                                <td>10,000</td>
+                                                                <td>2</td>
+                                                                <td class="text-end">
+                                                                    <span class="dropdown">
+                                                                        <button class="btn dropdown-toggle align-text-top"
+                                                                            data-bs-boundary="viewport"
+                                                                            data-bs-toggle="dropdown">Actions</button>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <a class="dropdown-item" href="#"> Action </a>
+                                                                            <a class="dropdown-item" href="#"> Another action </a>
+                                                                        </div>
+                                                                    </span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><span class="text-muted">2</span></td>
+                                                                <td><a href="invoice.html" class="text-reset" tabindex="-1">Muziney
+                                                                        Habibi</a></td>
+                                                                <td>
+                                                                    <span>+255658 636 369</span>
+                                                                </td>
+                                                                <td>100,887</td>
+                                                                <td class="d-flex align-items-center" style="margin-top: 5px;">
+                                                                    <div class="progress progress-xs">
+                                                                        <div class="progress-bar bg-primary" style="width: 71.0%"></div>
+                                                                    </div><span class="p-2" style="font-size: 12px;">89%</span>
+                                                                </td>
+                                                                <td>10,000</td>
+                                                                <td>2</td>
+                                                                <td class="text-end">
+                                                                    <span class="dropdown">
+                                                                        <button class="btn dropdown-toggle align-text-top"
+                                                                            data-bs-boundary="viewport"
+                                                                            data-bs-toggle="dropdown">Actions</button>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <a class="dropdown-item" href="#"> Action </a>
+                                                                            <a class="dropdown-item" href="#"> Another action </a>
+                                                                        </div>
+                                                                    </span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><span class="text-muted">3</span></td>
+                                                                <td><a href="invoice.html" class="text-reset" tabindex="-1">Muziney
+                                                                        Habibi</a></td>
+                                                                <td>
+                                                                    <span>+255658 636 369</span>
+                                                                </td>
+                                                                <td>100,887</td>
+                                                                <td class="d-flex align-items-center" style="margin-top: 5px;">
+                                                                    <div class="progress progress-xs">
+                                                                        <div class="progress-bar bg-primary" style="width: 71.0%"></div>
+                                                                    </div><span class="p-2" style="font-size: 12px;">89%</span>
+                                                                </td>
+                                                                <td>10,000</td>
+                                                                <td>2</td>
+                                                                <td class="text-end">
+                                                                    <span class="dropdown">
+                                                                        <button class="btn dropdown-toggle align-text-top"
+                                                                            data-bs-boundary="viewport"
+                                                                            data-bs-toggle="dropdown">Actions</button>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <a class="dropdown-item" href="#"> Action </a>
+                                                                            <a class="dropdown-item" href="#"> Another action </a>
+                                                                        </div>
+                                                                    </span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><span class="text-muted">4</span></td>
+                                                                <td><a href="invoice.html" class="text-reset" tabindex="-1">Muziney
+                                                                        Habibi</a></td>
+                                                                <td>
+                                                                    <span>+255658 636 369</span>
+                                                                </td>
+                                                                <td>100,887</td>
+                                                                <td class="d-flex align-items-center" style="margin-top: 5px;">
+                                                                    <div class="progress progress-xs">
+                                                                        <div class="progress-bar bg-primary" style="width: 90%"></div>
+                                                                    </div><span class="p-2" style="font-size: 12px;">89%</span>
+                                                                </td>
+                                                                <td>10,000</td>
+                                                                <td>2</td>
+                                                                <td class="text-end">
+                                                                    <span class="dropdown">
+                                                                        <button class="btn dropdown-toggle align-text-top"
+                                                                            data-bs-boundary="viewport"
+                                                                            data-bs-toggle="dropdown">Actions</button>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <a class="dropdown-item" href="#"> Action </a>
+                                                                            <a class="dropdown-item" href="#"> Another action </a>
+                                                                        </div>
+                                                                    </span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><span class="text-muted">5</span></td>
+                                                                <td><a href="invoice.html" class="text-reset" tabindex="-1">Muziney
+                                                                        Habibi</a></td>
+                                                                <td>
+                                                                    <span>+255658 636 369</span>
+                                                                </td>
+                                                                <td>100,887</td>
+                                                                <td class="d-flex align-items-center" style="margin-top: 5px;">
+                                                                    <div class="progress progress-xs">
+                                                                        <div class="progress-bar bg-primary" style="width: 71.0%"></div>
+                                                                    </div><span class="p-2" style="font-size: 12px;">89%</span>
+                                                                </td>
+                                                                <td>10,000</td>
+                                                                <td>2</td>
+                                                                <td class="text-end">
+                                                                    <span class="dropdown">
+                                                                        <button class="btn dropdown-toggle align-text-top"
+                                                                            data-bs-boundary="viewport"
+                                                                            data-bs-toggle="dropdown">Actions</button>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <a class="dropdown-item" href="#"> Action </a>
+                                                                            <a class="dropdown-item" href="#"> Another action </a>
+                                                                        </div>
+                                                                    </span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><span class="text-muted">6</span></td>
+                                                                <td><a href="invoice.html" class="text-reset" tabindex="-1">Muziney
+                                                                        Habibi</a></td>
+                                                                <td>
+                                                                    <span>+255658 636 369</span>
+                                                                </td>
+                                                                <td>100,887</td>
+                                                                <td class="d-flex align-items-center" style="margin-top: 5px;">
+                                                                    <div class="progress progress-xs">
+                                                                        <div class="progress-bar bg-secondary" style="width: 42%"></div>
+                                                                    </div><span class="p-2" style="font-size: 12px;">89%</span>
+                                                                </td>
+                                                                <td>10,000</td>
+                                                                <td>2</td>
+                                                                <td class="text-end">
+                                                                    <span class="dropdown">
+                                                                        <button class="btn dropdown-toggle align-text-top"
+                                                                            data-bs-boundary="viewport"
+                                                                            data-bs-toggle="dropdown">Actions</button>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <a class="dropdown-item" href="#"> Action </a>
+                                                                            <a class="dropdown-item" href="#"> Another action </a>
+                                                                        </div>
+                                                                    </span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><span class="text-muted">7</span></td>
+                                                                <td><a href="invoice.html" class="text-reset" tabindex="-1">Muziney
+                                                                        Habibi</a></td>
+                                                                <td>
+                                                                    <span>+255658 636 369</span>
+                                                                </td>
+                                                                <td>100,887</td>
+                                                                <td class="d-flex align-items-center" style="margin-top: 5px;">
+                                                                    <div class="progress progress-xs">
+                                                                        <div class="progress-bar bg-danger" style="width: 15.5%"></div>
+                                                                    </div><span class="p-2" style="font-size: 12px;">89%</span>
+                                                                </td>
+                                                                <td>10,000</td>
+                                                                <td>2</td>
+                                                                <td class="text-end">
+                                                                    <span class="dropdown">
+                                                                        <button class="btn dropdown-toggle align-text-top"
+                                                                            data-bs-boundary="viewport"
+                                                                            data-bs-toggle="dropdown">Actions</button>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <a class="dropdown-item" href="#"> Action </a>
+                                                                            <a class="dropdown-item" href="#"> Another action </a>
+                                                                        </div>
+                                                                    </span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><span class="text-muted">8</span></td>
+                                                                <td><a href="invoice.html" class="text-reset" tabindex="-1">Muziney
+                                                                        Habibi</a></td>
+                                                                <td>
+                                                                    <span>+255658 636 369</span>
+                                                                </td>
+                                                                <td>100,887</td>
+                                                                <td class="d-flex align-items-center" style="margin-top: 5px;">
+                                                                    <div class="progress progress-xs">
+                                                                        <div class="progress-bar bg-success" style="width: 100%"></div>
+                                                                    </div><span class="p-2" style="font-size: 12px;">89%</span>
+                                                                </td>
+                                                                <td>10,000</td>
+                                                                <td>2</td>
+                                                                <td class="text-end">
+                                                                    <span class="dropdown">
+                                                                        <button class="btn dropdown-toggle align-text-top"
+                                                                            data-bs-boundary="viewport"
+                                                                            data-bs-toggle="dropdown">Actions</button>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <a class="dropdown-item" href="#"> Action </a>
+                                                                            <a class="dropdown-item" href="#"> Another action </a>
+                                                                        </div>
+                                                                    </span>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="card-footer d-flex align-items-center">
+                                                    <p class="m-0 text-muted">Showing <span>1</span> to <span>8</span> of <span>16</span>
+                                                        entries</p>
+                                                    <ul class="pagination m-0 ms-auto">
+                                                        <li class="page-item disabled">
+                                                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                                                                <!-- Download SVG icon from http://tabler-icons.io/i/chevron-left -->
+                                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
+                                                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                                    <path d="M15 6l-6 6l6 6" />
+                                                                </svg> prev </a>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#"> next
+                                                                <!-- Download SVG icon from http://tabler-icons.io/i/chevron-right -->
+                                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
+                                                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                                    <path d="M9 6l6 6l-6 6" />
+                                                                </svg>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-3" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                <div class="container-xl">
+                                    <div class="row row-deck row-cards">
+                                        <div class="col-12">
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h3 class="card-title">New Loans Aplication </h3>
+                                                </div>
+                                                <div class="card-body border-bottom py-3">
+                                                    <div class="d-flex">
+                                                        <div class="text-muted"> Show <div class="mx-2 d-inline-block">
+                                                                <input type="text" class="form-control form-control-sm" value="8" size="3"
+                                                                    aria-label="Invoices count">
+                                                            </div> entries </div>
+                                                        <div class="ms-auto text-muted"> Search: <div class="ms-2 d-inline-block">
+                                                                <input type="text" class="form-control form-control-sm"
+                                                                    aria-label="Search invoice">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="table-responsive">
+                                                    <table class="table card-table table-vcenter text-nowrap datatable">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="w-1">No.
+                                                                    <!-- Download SVG icon from http://tabler-icons.io/i/chevron-up -->
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-sm icon-thick"
+                                                                        width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                                        stroke="currentColor" fill="none" stroke-linecap="round"
+                                                                        stroke-linejoin="round">
+                                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                                        <path d="M6 15l6 -6l6 6" />
+                                                                    </svg>
+                                                                </th>
+                                                                <th>Name</th>
+                                                                <th>Phone</th>
+                                                                <th>Amount</th>
+                                                                <th>Score</th>
+                                                                <th>Interest</th>
+                                                                <th>Period</th>
+                                                                <th></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><span class="text-muted">1</span></td>
+                                                                <td><a href="invoice.html" class="text-reset" tabindex="-1">Muziney
+                                                                        Habibi</a></td>
+                                                                <td>
+                                                                    <span>+255658 636 369</span>
+                                                                </td>
+                                                                <td>100,887</td>
+                                                                <td class="d-flex align-items-center" style="margin-top: 5px;">
+                                                                    <div class="progress progress-xs">
+                                                                        <div class="progress-bar bg-success" style="width: 100%"></div>
+                                                                    </div><span class="p-2" style="font-size: 12px;">89%</span>
+                                                                </td>
+                                                                <td>10,000</td>
+                                                                <td><span class="status status-green">Proccesed</span></td>
+                                                                <td class="text-end">
+                                                                    <span class="dropdown">
+                                                                        <button class="btn dropdown-toggle align-text-top"
+                                                                            data-bs-boundary="viewport"
+                                                                            data-bs-toggle="dropdown">Actions</button>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <a class="dropdown-item" href="#"> Action </a>
+                                                                            <a class="dropdown-item" href="#"> Another action </a>
+                                                                        </div>
+                                                                    </span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><span class="text-muted">2</span></td>
+                                                                <td><a href="invoice.html" class="text-reset" tabindex="-1">Muziney
+                                                                        Habibi</a></td>
+                                                                <td>
+                                                                    <span>+255658 636 369</span>
+                                                                </td>
+                                                                <td>100,887</td>
+                                                                <td class="d-flex align-items-center" style="margin-top: 5px;">
+                                                                    <div class="progress progress-xs">
+                                                                        <div class="progress-bar bg-primary" style="width: 71.0%"></div>
+                                                                    </div><span class="p-2" style="font-size: 12px;">89%</span>
+                                                                </td>
+                                                                <td>10,000</td>
+                                                                <td><span class="status status-green">Proccesed</span></td>
+                                                                <td class="text-end">
+                                                                    <span class="dropdown">
+                                                                        <button class="btn dropdown-toggle align-text-top"
+                                                                            data-bs-boundary="viewport"
+                                                                            data-bs-toggle="dropdown">Actions</button>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <a class="dropdown-item" href="#"> Action </a>
+                                                                            <a class="dropdown-item" href="#"> Another action </a>
+                                                                        </div>
+                                                                    </span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><span class="text-muted">3</span></td>
+                                                                <td><a href="invoice.html" class="text-reset" tabindex="-1">Muziney
+                                                                        Habibi</a></td>
+                                                                <td>
+                                                                    <span>+255658 636 369</span>
+                                                                </td>
+                                                                <td>100,887</td>
+                                                                <td class="d-flex align-items-center" style="margin-top: 5px;">
+                                                                    <div class="progress progress-xs">
+                                                                        <div class="progress-bar bg-primary" style="width: 71.0%"></div>
+                                                                    </div><span class="p-2" style="font-size: 12px;">89%</span>
+                                                                </td>
+                                                                <td>10,000</td>
+                                                                <td><span class="status status-green">Proccesed</span></td>
+                                                                <td class="text-end">
+                                                                    <span class="dropdown">
+                                                                        <button class="btn dropdown-toggle align-text-top"
+                                                                            data-bs-boundary="viewport"
+                                                                            data-bs-toggle="dropdown">Actions</button>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <a class="dropdown-item" href="#"> Action </a>
+                                                                            <a class="dropdown-item" href="#"> Another action </a>
+                                                                        </div>
+                                                                    </span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><span class="text-muted">4</span></td>
+                                                                <td><a href="invoice.html" class="text-reset" tabindex="-1">Muziney
+                                                                        Habibi</a></td>
+                                                                <td>
+                                                                    <span>+255658 636 369</span>
+                                                                </td>
+                                                                <td>100,887</td>
+                                                                <td class="d-flex align-items-center" style="margin-top: 5px;">
+                                                                    <div class="progress progress-xs">
+                                                                        <div class="progress-bar bg-primary" style="width: 90%"></div>
+                                                                    </div><span class="p-2" style="font-size: 12px;">89%</span>
+                                                                </td>
+                                                                <td>10,000</td>
+                                                                <td><span class="status status-green">Proccesed</span></td>
+                                                                <td class="text-end">
+                                                                    <span class="dropdown">
+                                                                        <button class="btn dropdown-toggle align-text-top"
+                                                                            data-bs-boundary="viewport"
+                                                                            data-bs-toggle="dropdown">Actions</button>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <a class="dropdown-item" href="#"> Action </a>
+                                                                            <a class="dropdown-item" href="#"> Another action </a>
+                                                                        </div>
+                                                                    </span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><span class="text-muted">5</span></td>
+                                                                <td><a href="invoice.html" class="text-reset" tabindex="-1">Muziney
+                                                                        Habibi</a></td>
+                                                                <td>
+                                                                    <span>+255658 636 369</span>
+                                                                </td>
+                                                                <td>100,887</td>
+                                                                <td class="d-flex align-items-center" style="margin-top: 5px;">
+                                                                    <div class="progress progress-xs">
+                                                                        <div class="progress-bar bg-primary" style="width: 71.0%"></div>
+                                                                    </div><span class="p-2" style="font-size: 12px;">89%</span>
+                                                                </td>
+                                                                <td>10,000</td>
+                                                                <td><span class="status status-green">Proccesed</span></td>
+                                                                <td class="text-end">
+                                                                    <span class="dropdown">
+                                                                        <button class="btn dropdown-toggle align-text-top"
+                                                                            data-bs-boundary="viewport"
+                                                                            data-bs-toggle="dropdown">Actions</button>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <a class="dropdown-item" href="#"> Action </a>
+                                                                            <a class="dropdown-item" href="#"> Another action </a>
+                                                                        </div>
+                                                                    </span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><span class="text-muted">6</span></td>
+                                                                <td><a href="invoice.html" class="text-reset" tabindex="-1">Muziney
+                                                                        Habibi</a></td>
+                                                                <td>
+                                                                    <span>+255658 636 369</span>
+                                                                </td>
+                                                                <td>100,887</td>
+                                                                <td class="d-flex align-items-center" style="margin-top: 5px;">
+                                                                    <div class="progress progress-xs">
+                                                                        <div class="progress-bar bg-secondary" style="width: 42%"></div>
+                                                                    </div><span class="p-2" style="font-size: 12px;">89%</span>
+                                                                </td>
+                                                                <td>10,000</td>
+                                                                <td><span class="status status-green">Proccesed</span></td>
+                                                                <td class="text-end">
+                                                                    <span class="dropdown">
+                                                                        <button class="btn dropdown-toggle align-text-top"
+                                                                            data-bs-boundary="viewport"
+                                                                            data-bs-toggle="dropdown">Actions</button>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <a class="dropdown-item" href="#"> Action </a>
+                                                                            <a class="dropdown-item" href="#"> Another action </a>
+                                                                        </div>
+                                                                    </span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><span class="text-muted">7</span></td>
+                                                                <td><a href="invoice.html" class="text-reset" tabindex="-1">Muziney
+                                                                        Habibi</a></td>
+                                                                <td>
+                                                                    <span>+255658 636 369</span>
+                                                                </td>
+                                                                <td>100,887</td>
+                                                                <td class="d-flex align-items-center" style="margin-top: 5px;">
+                                                                    <div class="progress progress-xs">
+                                                                        <div class="progress-bar bg-danger" style="width: 15.5%"></div>
+                                                                    </div><span class="p-2" style="font-size: 12px;">89%</span>
+                                                                </td>
+                                                                <td>10,000</td>
+                                                                <td><span class="status status-green">Proccesed</span></td>
+                                                                <td class="text-end">
+                                                                    <span class="dropdown">
+                                                                        <button class="btn dropdown-toggle align-text-top"
+                                                                            data-bs-boundary="viewport"
+                                                                            data-bs-toggle="dropdown">Actions</button>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <a class="dropdown-item" href="#"> Action </a>
+                                                                            <a class="dropdown-item" href="#"> Another action </a>
+                                                                        </div>
+                                                                    </span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><span class="text-muted">8</span></td>
+                                                                <td><a href="invoice.html" class="text-reset" tabindex="-1">Muziney
+                                                                        Habibi</a></td>
+                                                                <td>
+                                                                    <span>+255658 636 369</span>
+                                                                </td>
+                                                                <td>100,887</td>
+                                                                <td class="d-flex align-items-center" style="margin-top: 5px;">
+                                                                    <div class="progress progress-xs">
+                                                                        <div class="progress-bar bg-success" style="width: 100%"></div>
+                                                                    </div><span class="p-2" style="font-size: 12px;">89%</span>
+                                                                </td>
+                                                                <td>10,000</td>
+                                                                <td><span class="status status-green">Proccesed</span></td>
+                                                                <td class="text-end">
+                                                                    <span class="dropdown">
+                                                                        <button class="btn dropdown-toggle align-text-top"
+                                                                            data-bs-boundary="viewport"
+                                                                            data-bs-toggle="dropdown">Actions</button>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <a class="dropdown-item" href="#"> Action </a>
+                                                                            <a class="dropdown-item" href="#"> Another action </a>
+                                                                        </div>
+                                                                    </span>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="card-footer d-flex align-items-center">
+                                                    <p class="m-0 text-muted">Showing <span>1</span> to <span>8</span> of <span>16</span>
+                                                        entries</p>
+                                                    <ul class="pagination m-0 ms-auto">
+                                                        <li class="page-item disabled">
+                                                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                                                                <!-- Download SVG icon from http://tabler-icons.io/i/chevron-left -->
+                                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
+                                                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                                    <path d="M15 6l-6 6l6 6" />
+                                                                </svg> prev </a>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#"> next
+                                                                <!-- Download SVG icon from http://tabler-icons.io/i/chevron-right -->
+                                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
+                                                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                                    <path d="M9 6l6 6l-6 6" />
+                                                                </svg>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-4" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                <h4>Professional Services</h4>
+                                <p>Manage projects more effectively, reduce risk, and boost customer satisfaction with professional services
+                                    software from SAP.</p>
+                            </div>
+                            <div class="tab-pane fade" id="nav-5" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                <h4>Insurance</h4>
+                                <p>By adopting new digital business models and processes, you can better protect your customers’ health,
+                                    property, and business.</p>
+                            </div>
+                            <div class="tab-pane fade" id="nav-6" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                <h4>Clearing & Forwarding</h4>
+                                <p style="text-align: justify;">SAP Business One® is specifically designed for clearing and forwarding
+                                    companies, where job wise entries can be inputted to the system for all the files and tracked. The
+                                    software is designed to have all the procedures followed for delivering the goods whether by land, air
+                                    or sea.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer footer-transparent d-print-none">
+                <div class="container-xl">
+                    <div class="row text-center align-items-center flex-row-reverse">
+                        <div class="col-lg-auto ms-lg-auto">
+                            <ul class="list-inline list-inline-dots mb-0">
+                                <li class="list-inline-item"><a href="#" target="_blank" class="link-secondary"
+                                        rel="noopener">Documentation</a></li>
+                                <li class="list-inline-item"><a href="#" class="link-secondary">Terms</a></li>
+                                <li class="list-inline-item">
+                                    <a href="#" target="_blank" class="link-secondary" rel="noopener">Powered by Bizy Tech Limited </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-auto mt-3 mt-lg-0">
+                            <ul class="list-inline list-inline-dots mb-0">
+                                <li class="list-inline-item"> Copyright &copy; 2024 <a href="." class="link-secondary">Kilimo Mkopo</a>. All
+                                    rights reserved. </li>
+                                <li class="list-inline-item">
+                                    <a href="./changelog.html" class="link-secondary" rel="noopener"> v1.0.0 </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <div class="modal modal-blur fade" id="modal-report" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">New report</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-control" name="example-text-input" placeholder="Your report name">
+                    </div>
+                    <label class="form-label">Report type</label>
+                    <div class="form-selectgroup-boxes row mb-3">
+                        <div class="col-lg-6">
+                            <label class="form-selectgroup-item">
+                                <input type="radio" name="report-type" value="1" class="form-selectgroup-input" checked>
+                                <span class="form-selectgroup-label d-flex align-items-center p-3">
+                                    <span class="me-3">
+                                        <span class="form-selectgroup-check"></span>
+                                    </span>
+                                    <span class="form-selectgroup-label-content">
+                                        <span class="form-selectgroup-title strong mb-1">Simple</span>
+                                        <span class="d-block text-muted">Provide only basic data needed for the report</span>
+                                    </span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-lg-6">
+                            <label class="form-selectgroup-item">
+                                <input type="radio" name="report-type" value="1" class="form-selectgroup-input">
+                                <span class="form-selectgroup-label d-flex align-items-center p-3">
+                                    <span class="me-3">
+                                        <span class="form-selectgroup-check"></span>
+                                    </span>
+                                    <span class="form-selectgroup-label-content">
+                                        <span class="form-selectgroup-title strong mb-1">Advanced</span>
+                                        <span class="d-block text-muted">Insert charts and additional advanced analyses to be inserted in
+                                            the report</span>
+                                    </span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="mb-3">
+                                <label class="form-label">Report url</label>
+                                <div class="input-group input-group-flat">
+                                    <span class="input-group-text"> https://bizytech.com</span>
+                                    <input type="text" class="form-control ps-0" value="report-01" autocomplete="off">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="mb-3">
+                                <label class="form-label">Visibility</label>
+                                <select class="form-select">
+                                    <option value="1" selected>Private</option>
+                                    <option value="2">Public</option>
+                                    <option value="3">Hidden</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="mb-3">
+                                <label class="form-label">Client name</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="mb-3">
+                                <label class="form-label">Reporting period</label>
+                                <input type="date" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div>
+                                <label class="form-label">Additional information</label>
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-link link-secondary" data-bs-dismiss="modal"> Cancel </a>
+                    <a href="#" class="btn btn-primary ms-auto" data-bs-dismiss="modal">
+                        <!-- Download SVG icon from http://tabler-icons.io/i/plus -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M12 5l0 14" />
+                            <path d="M5 12l14 0" />
+                        </svg> Create new report </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Libs JS -->
+    <script src="./dist/libs/apexcharts/dist/apexcharts.min.js?1684106062" defer></script>
+    <script src="./dist/libs/jsvectormap/dist/js/jsvectormap.min.js?1684106062" defer></script>
+    <script src="./dist/libs/jsvectormap/dist/maps/world.js?1684106062" defer></script>
+    <script src="./dist/libs/jsvectormap/dist/maps/world-merc.js?1684106062" defer></script>
+    <!-- Tabler Core -->
+    <script src="./dist/js/tabler.min.js?1684106062" defer></script>
+    <script src="./dist/js/demo.min.js?1684106062" defer></script>
+    <script>
+        // @formatter:off
+        document.addEventListener("DOMContentLoaded", function () {
+            window.ApexCharts && (new ApexCharts(document.getElementById('chart-revenue-bg'), {
+                chart: {
+                    type: "area",
+                    fontFamily: 'inherit',
+                    height: 40.0,
+                    sparkline: {
+                        enabled: true
+                    },
+                    animations: {
+                        enabled: false
+                    },
+                },
+                dataLabels: {
+                    enabled: false,
+                },
+                fill: {
+                    opacity: .16,
+                    type: 'solid'
+                },
+                stroke: {
+                    width: 2,
+                    lineCap: "round",
+                    curve: "smooth",
+                },
+                series: [{
+                    name: "Profits",
+                    data: [37, 35, 44, 28, 36, 24, 65, 31, 37, 39, 62, 51, 35, 41, 35, 27, 93, 53, 61, 27, 54, 43, 19, 46, 39, 62, 51, 35, 41, 67]
+                }],
+                tooltip: {
+                    theme: 'dark'
+                },
+                grid: {
+                    strokeDashArray: 4,
+                },
+                xaxis: {
+                    labels: {
+                        padding: 0,
+                    },
+                    tooltip: {
+                        enabled: false
+                    },
+                    axisBorder: {
+                        show: false,
+                    },
+                    type: 'datetime',
+                },
+                yaxis: {
+                    labels: {
+                        padding: 4
+                    },
+                },
+                labels: [
+                    '2020-06-20', '2020-06-21', '2020-06-22', '2020-06-23', '2020-06-24', '2020-06-25', '2020-06-26', '2020-06-27', '2020-06-28', '2020-06-29', '2020-06-30', '2020-07-01', '2020-07-02', '2020-07-03', '2020-07-04', '2020-07-05', '2020-07-06', '2020-07-07', '2020-07-08', '2020-07-09', '2020-07-10', '2020-07-11', '2020-07-12', '2020-07-13', '2020-07-14', '2020-07-15', '2020-07-16', '2020-07-17', '2020-07-18', '2020-07-19'
+                ],
+                colors: [tabler.getColor("primary")],
+                legend: {
+                    show: false,
+                },
+            })).render();
+        });
+        // @formatter:on
+    </script>
+    <script>
+        // @formatter:off
+        document.addEventListener("DOMContentLoaded", function () {
+            window.ApexCharts && (new ApexCharts(document.getElementById('chart-new-clients'), {
+                chart: {
+                    type: "line",
+                    fontFamily: 'inherit',
+                    height: 40.0,
+                    sparkline: {
+                        enabled: true
+                    },
+                    animations: {
+                        enabled: false
+                    },
+                },
+                fill: {
+                    opacity: 1,
+                },
+                stroke: {
+                    width: [2, 1],
+                    dashArray: [0, 3],
+                    lineCap: "round",
+                    curve: "smooth",
+                },
+                series: [{
+                    name: "May",
+                    data: [37, 35, 44, 28, 36, 24, 65, 31, 37, 39, 62, 51, 35, 41, 35, 27, 93, 53, 61, 27, 54, 43, 4, 46, 39, 62, 51, 35, 41, 67]
+                }, {
+                    name: "April",
+                    data: [93, 54, 51, 24, 35, 35, 31, 67, 19, 43, 28, 36, 62, 61, 27, 39, 35, 41, 27, 35, 51, 46, 62, 37, 44, 53, 41, 65, 39, 37]
+                }],
+                tooltip: {
+                    theme: 'dark'
+                },
+                grid: {
+                    strokeDashArray: 4,
+                },
+                xaxis: {
+                    labels: {
+                        padding: 0,
+                    },
+                    tooltip: {
+                        enabled: false
+                    },
+                    type: 'datetime',
+                },
+                yaxis: {
+                    labels: {
+                        padding: 4
+                    },
+                },
+                labels: [
+                    '2020-06-20', '2020-06-21', '2020-06-22', '2020-06-23', '2020-06-24', '2020-06-25', '2020-06-26', '2020-06-27', '2020-06-28', '2020-06-29', '2020-06-30', '2020-07-01', '2020-07-02', '2020-07-03', '2020-07-04', '2020-07-05', '2020-07-06', '2020-07-07', '2020-07-08', '2020-07-09', '2020-07-10', '2020-07-11', '2020-07-12', '2020-07-13', '2020-07-14', '2020-07-15', '2020-07-16', '2020-07-17', '2020-07-18', '2020-07-19'
+                ],
+                colors: [tabler.getColor("primary"), tabler.getColor("gray-600")],
+                legend: {
+                    show: false,
+                },
+            })).render();
+        });
+        // @formatter:on
+    </script>
+    <script>
+        // @formatter:off
+        document.addEventListener("DOMContentLoaded", function () {
+            window.ApexCharts && (new ApexCharts(document.getElementById('chart-active-users'), {
+                chart: {
+                    type: "bar",
+                    fontFamily: 'inherit',
+                    height: 40.0,
+                    sparkline: {
+                        enabled: true
+                    },
+                    animations: {
+                        enabled: false
+                    },
+                },
+                plotOptions: {
+                    bar: {
+                        columnWidth: '50%',
+                    }
+                },
+                dataLabels: {
+                    enabled: false,
+                },
+                fill: {
+                    opacity: 1,
+                },
+                series: [{
+                    name: "Profits",
+                    data: [37, 35, 44, 28, 36, 24, 65, 31, 37, 39, 62, 51, 35, 41, 35, 27, 93, 53, 61, 27, 54, 43, 19, 46, 39, 62, 51, 35, 41, 67]
+                }],
+                tooltip: {
+                    theme: 'dark'
+                },
+                grid: {
+                    strokeDashArray: 4,
+                },
+                xaxis: {
+                    labels: {
+                        padding: 0,
+                    },
+                    tooltip: {
+                        enabled: false
+                    },
+                    axisBorder: {
+                        show: false,
+                    },
+                    type: 'datetime',
+                },
+                yaxis: {
+                    labels: {
+                        padding: 4
+                    },
+                },
+                labels: [
+                    '2020-06-20', '2020-06-21', '2020-06-22', '2020-06-23', '2020-06-24', '2020-06-25', '2020-06-26', '2020-06-27', '2020-06-28', '2020-06-29', '2020-06-30', '2020-07-01', '2020-07-02', '2020-07-03', '2020-07-04', '2020-07-05', '2020-07-06', '2020-07-07', '2020-07-08', '2020-07-09', '2020-07-10', '2020-07-11', '2020-07-12', '2020-07-13', '2020-07-14', '2020-07-15', '2020-07-16', '2020-07-17', '2020-07-18', '2020-07-19'
+                ],
+                colors: [tabler.getColor("primary")],
+                legend: {
+                    show: false,
+                },
+            })).render();
+        });
+        // @formatter:on
+    </script>
+    <script>
+        // @formatter:off
+        document.addEventListener("DOMContentLoaded", function () {
+            window.ApexCharts && (new ApexCharts(document.getElementById('chart-mentions'), {
+                chart: {
+                    type: "line",
+                    fontFamily: 'inherit',
+                    height: 240,
+                    parentHeightOffset: 0,
+                    toolbar: {
+                        show: false,
+                    },
+                    animations: {
+                        enabled: false
+                    },
+                    stacked: true,
+                },
+                plotOptions: {
+                    bar: {
+                        columnWidth: '50%',
+                    }
+                },
+                dataLabels: {
+                    enabled: false,
+                },
+                fill: {
+                    opacity: 1,
+                },
+                series: [{
+                    name: "Pending Loans",
+                    data: [1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 2, 120, 5, 8, 202, 6, 8, 6, 4, 1, 8, 240, 29, 51, 40, 47, 23, 26, 50, 26, 410, 22, 46, 47, 810, 46, 6]
+                }, {
+                    name: "Laons applications",
+                    data: [2, 5, 4, 3, 3, 1, 4, 7, 50, 1, 2, 5, 3, 2, 6, 70, 70, 11, 50, 150, 120, 120, 4, 6, 18, 3, 5, 2, 13, 105, 20, 47, 18, 150, 11, 10, 0]
+                }, {
+                    name: "Non-perfoming loans",
+                    data: [2, 9, 1, 7, 8, 3, 60, 5, 5, 4, 6, 4, 1, 90, 30, 6, 7, 50, 2, 8, 4, 9, 1, 2, 6, 7, 5, 1, 8, 3, 2, 3, 4, 9, 7, 1, 6]
+                }],
+                tooltip: {
+                    theme: 'dark'
+                },
+                grid: {
+                    padding: {
+                        top: -20,
+                        right: 0,
+                        left: -4,
+                        bottom: -4
+                    },
+                    strokeDashArray: 4,
+                    xaxis: {
+                        lines: {
+                            show: true
+                        }
+                    },
+                },
+                stroke: {
+                    width: [2, 2, 2],
+                    dashArray: [0, 3, 0],
+                    lineCap: "round",
+                    curve: "smooth",
+                },
+                xaxis: {
+                    labels: {
+                        padding: 0,
+                    },
+                    tooltip: {
+                        enabled: false
+                    },
+                    axisBorder: {
+                        show: false,
+                    },
+                    type: 'datetime',
+                },
+                yaxis: {
+                    labels: {
+                        padding: 4
+                    },
+                },
+                labels: [
+                    '2020-06-20', '2020-06-21', '2020-06-22', '2020-06-23', '2020-06-24', '2020-06-25', '2020-06-26', '2020-06-27', '2020-06-28', '2020-06-29', '2020-06-30', '2020-07-01', '2020-07-02', '2020-07-03', '2020-07-04', '2020-07-05', '2020-07-06', '2020-07-07', '2020-07-08', '2020-07-09', '2020-07-10', '2020-07-11', '2020-07-12', '2020-07-13', '2020-07-14', '2020-07-15', '2020-07-16', '2020-07-17', '2020-07-18', '2020-07-19', '2020-07-20', '2020-07-21', '2020-07-22', '2020-07-23', '2020-07-24', '2020-07-25', '2020-07-26'
+                ],
+                colors: [tabler.getColor("primary"), tabler.getColor("primary", 0.8), tabler.getColor("green", 0.8)],
+                legend: {
+                    show: false,
+                },
+            })).render();
+        });
+        // @formatter:on
+    </script>
+    <script>
+        // @formatter:on
+        document.addEventListener("DOMContentLoaded", function () {
+            const map = new jsVectorMap({
+                selector: '#map-world',
+                map: 'world',
+                backgroundColor: 'transparent',
+                regionStyle: {
+                    initial: {
+                        fill: tabler.getColor('body-bg'),
+                        stroke: tabler.getColor('border-color'),
+                        strokeWidth: 2,
+                    }
+                },
+                zoomOnScroll: false,
+                zoomButtons: false,
+                // -------- Series --------
+                visualizeData: {
+                    scale: [tabler.getColor('bg-surface'), tabler.getColor('primary')],
+                    values: { "AF": 16, "AL": 11, "DZ": 158, "AO": 85, "AG": 1, "AR": 351, "AM": 8, "AU": 1219, "AT": 366, "AZ": 52, "BS": 7, "BH": 21, "BD": 105, "BB": 3, "BY": 52, "BE": 461, "BZ": 1, "BJ": 6, "BT": 1, "BO": 19, "BA": 16, "BW": 12, "BR": 2023, "BN": 11, "BG": 44, "BF": 8, "BI": 1, "KH": 11, "CM": 21, "CA": 1563, "CV": 1, "CF": 2, "TD": 7, "CL": 199, "CN": 5745, "CO": 283, "KM": 0, "CD": 12, "CG": 11, "CR": 35, "CI": 22, "HR": 59, "CY": 22, "CZ": 195, "DK": 304, "DJ": 1, "DM": 0, "DO": 50, "EC": 61, "EG": 216, "SV": 21, "GQ": 14, "ER": 2, "EE": 19, "ET": 30, "FJ": 3, "FI": 231, "FR": 2555, "GA": 12, "GM": 1, "GE": 11, "DE": 3305, "GH": 18, "GR": 305, "GD": 0, "GT": 40, "GN": 4, "GW": 0, "GY": 2, "HT": 6, "HN": 15, "HK": 226, "HU": 132, "IS": 12, "IN": 1430, "ID": 695, "IR": 337, "IQ": 84, "IE": 204, "IL": 201, "IT": 2036, "JM": 13, "JP": 5390, "JO": 27, "KZ": 129, "KE": 32, "KI": 0, "KR": 986, "KW": 117, "KG": 4, "LA": 6, "LV": 23, "LB": 39, "LS": 1, "LR": 0, "LY": 77, "LT": 35, "LU": 52, "MK": 9, "MG": 8, "MW": 5, "MY": 218, "MV": 1, "ML": 9, "MT": 7, "MR": 3, "MU": 9, "MX": 1004, "MD": 5, "MN": 5, "ME": 3, "MA": 91, "MZ": 10, "MM": 35, "NA": 11, "NP": 15, "NL": 770, "NZ": 138, "NI": 6, "NE": 5, "NG": 206, "NO": 413, "OM": 53, "PK": 174, "PA": 27, "PG": 8, "PY": 17, "PE": 153, "PH": 189, "PL": 438, "PT": 223, "QA": 126, "RO": 158, "RU": 1476, "RW": 5, "WS": 0, "ST": 0, "SA": 434, "SN": 12, "RS": 38, "SC": 0, "SL": 1, "SG": 217, "SK": 86, "SI": 46, "SB": 0, "ZA": 354, "ES": 1374, "LK": 48, "KN": 0, "LC": 1, "VC": 0, "SD": 65, "SR": 3, "SZ": 3, "SE": 444, "CH": 522, "SY": 59, "TW": 426, "TJ": 5, "TZ": 22, "TH": 312, "TL": 0, "TG": 3, "TO": 0, "TT": 21, "TN": 43, "TR": 729, "TM": 0, "UG": 17, "UA": 136, "AE": 239, "GB": 2258, "US": 4624, "UY": 40, "UZ": 37, "VU": 0, "VE": 285, "VN": 101, "YE": 30, "ZM": 15, "ZW": 5 },
+                },
+            });
+            window.addEventListener("resize", () => {
+                map.updateSize();
+            });
+        });
+        // @formatter:off
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            window.ApexCharts && (new ApexCharts(document.getElementById('balance-trend'), {
+                chart: {
+                    type: "donut",
+                    fontFamily: 'inherit',
+                    height: 240,
+                    sparkline: {
+                        enabled: true
+                    },
+                    animations: {
+                        enabled: false
+                    },
+                },
+                fill: {
+                    opacity: 1,
+                },
+                series: [58, 42],
+                labels: ["Loan Aplications", "Loans Approved"],
+                tooltip: {
+                    theme: 'dark'
+                },
+                grid: {
+                    strokeDashArray: 4,
+                },
+                colors: [tabler.getColor("primary"), tabler.getColor("primary", 0.6)],
+                legend: {
+                    show: true,
+                    position: 'bottom',
+                    offsetY: 12,
+                    markers: {
+                        width: 10,
+                        height: 10,
+                        radius: 100,
+                    },
+                    itemMargin: {
+                        horizontal: 8,
+                        vertical: 8
+                    },
+                },
+                tooltip: {
+                    fillSeriesColor: false
+                },
+            })).render();
+        });
+    </script>
+    <script>
+        // @formatter:off
+        document.addEventListener("DOMContentLoaded", function () {
+            window.ApexCharts && (new ApexCharts(document.getElementById('sparkline-activity'), {
+                chart: {
+                    type: "radialBar",
+                    fontFamily: 'inherit',
+                    height: 40,
+                    width: 40,
+                    animations: {
+                        enabled: false
+                    },
+                    sparkline: {
+                        enabled: true
+                    },
+                },
+                tooltip: {
+                    enabled: false,
+                },
+                plotOptions: {
+                    radialBar: {
+                        hollow: {
+                            margin: 0,
+                            size: '75%'
+                        },
+                        track: {
+                            margin: 0
+                        },
+                        dataLabels: {
+                            show: false
+                        }
+                    }
+                },
+                colors: [tabler.getColor("blue")],
+                series: [35],
+            })).render();
+        });
+        // @formatter:on
+    </script>
+    <script>
+        // @formatter:off
+        document.addEventListener("DOMContentLoaded", function () {
+            window.ApexCharts && (new ApexCharts(document.getElementById('chart-development-activity'), {
+                chart: {
+                    type: "area",
+                    fontFamily: 'inherit',
+                    height: 192,
+                    sparkline: {
+                        enabled: true
+                    },
+                    animations: {
+                        enabled: false
+                    },
+                },
+                dataLabels: {
+                    enabled: false,
+                },
+                fill: {
+                    opacity: .16,
+                    type: 'solid'
+                },
+                stroke: {
+                    width: 2,
+                    lineCap: "round",
+                    curve: "smooth",
+                },
+                series: [{
+                    name: "Purchases",
+                    data: [3, 5, 4, 6, 7, 5, 6, 8, 24, 7, 12, 5, 6, 3, 8, 4, 14, 30, 17, 19, 15, 14, 25, 32, 40, 55, 60, 48, 52, 70]
+                }],
+                tooltip: {
+                    theme: 'dark'
+                },
+                grid: {
+                    strokeDashArray: 4,
+                },
+                xaxis: {
+                    labels: {
+                        padding: 0,
+                    },
+                    tooltip: {
+                        enabled: false
+                    },
+                    axisBorder: {
+                        show: false,
+                    },
+                    type: 'datetime',
+                },
+                yaxis: {
+                    labels: {
+                        padding: 4
+                    },
+                },
+                labels: [
+                    '2020-06-20', '2020-06-21', '2020-06-22', '2020-06-23', '2020-06-24', '2020-06-25', '2020-06-26', '2020-06-27', '2020-06-28', '2020-06-29', '2020-06-30', '2020-07-01', '2020-07-02', '2020-07-03', '2020-07-04', '2020-07-05', '2020-07-06', '2020-07-07', '2020-07-08', '2020-07-09', '2020-07-10', '2020-07-11', '2020-07-12', '2020-07-13', '2020-07-14', '2020-07-15', '2020-07-16', '2020-07-17', '2020-07-18', '2020-07-19'
+                ],
+                colors: [tabler.getColor("primary")],
+                legend: {
+                    show: false,
+                },
+                point: {
+                    show: false
+                },
+            })).render();
+        });
+        // @formatter:on
+    </script>
+    <script>
+        // @formatter:off
+        document.addEventListener("DOMContentLoaded", function () {
+            window.ApexCharts && (new ApexCharts(document.getElementById('sparkline-bounce-rate-1'), {
+                chart: {
+                    type: "line",
+                    fontFamily: 'inherit',
+                    height: 24,
+                    animations: {
+                        enabled: false
+                    },
+                    sparkline: {
+                        enabled: true
+                    },
+                },
+                tooltip: {
+                    enabled: false,
+                },
+                stroke: {
+                    width: 2,
+                    lineCap: "round",
+                },
+                series: [{
+                    color: tabler.getColor("primary"),
+                    data: [17, 24, 20, 10, 5, 1, 4, 18, 13]
+                }],
+            })).render();
+        });
+        // @formatter:on
+    </script>
+    <script>
+        // @formatter:off
+        document.addEventListener("DOMContentLoaded", function () {
+            window.ApexCharts && (new ApexCharts(document.getElementById('sparkline-bounce-rate-2'), {
+                chart: {
+                    type: "line",
+                    fontFamily: 'inherit',
+                    height: 24,
+                    animations: {
+                        enabled: false
+                    },
+                    sparkline: {
+                        enabled: true
+                    },
+                },
+                tooltip: {
+                    enabled: false,
+                },
+                stroke: {
+                    width: 2,
+                    lineCap: "round",
+                },
+                series: [{
+                    color: tabler.getColor("primary"),
+                    data: [13, 11, 19, 22, 12, 7, 14, 3, 21]
+                }],
+            })).render();
+        });
+        // @formatter:on
+    </script>
+    <script>
+        // @formatter:off
+        document.addEventListener("DOMContentLoaded", function () {
+            window.ApexCharts && (new ApexCharts(document.getElementById('sparkline-bounce-rate-3'), {
+                chart: {
+                    type: "line",
+                    fontFamily: 'inherit',
+                    height: 24,
+                    animations: {
+                        enabled: false
+                    },
+                    sparkline: {
+                        enabled: true
+                    },
+                },
+                tooltip: {
+                    enabled: false,
+                },
+                stroke: {
+                    width: 2,
+                    lineCap: "round",
+                },
+                series: [{
+                    color: tabler.getColor("primary"),
+                    data: [10, 13, 10, 4, 17, 3, 23, 22, 19]
+                }],
+            })).render();
+        });
+        // @formatter:on
+    </script>
+    <script>
+        // @formatter:off
+        document.addEventListener("DOMContentLoaded", function () {
+            window.ApexCharts && (new ApexCharts(document.getElementById('sparkline-bounce-rate-4'), {
+                chart: {
+                    type: "line",
+                    fontFamily: 'inherit',
+                    height: 24,
+                    animations: {
+                        enabled: false
+                    },
+                    sparkline: {
+                        enabled: true
+                    },
+                },
+                tooltip: {
+                    enabled: false,
+                },
+                stroke: {
+                    width: 2,
+                    lineCap: "round",
+                },
+                series: [{
+                    color: tabler.getColor("primary"),
+                    data: [6, 15, 13, 13, 5, 7, 17, 20, 19]
+                }],
+            })).render();
+        });
+        // @formatter:on
+    </script>
+    <script>
+        // @formatter:off
+        document.addEventListener("DOMContentLoaded", function () {
+            window.ApexCharts && (new ApexCharts(document.getElementById('sparkline-bounce-rate-5'), {
+                chart: {
+                    type: "line",
+                    fontFamily: 'inherit',
+                    height: 24,
+                    animations: {
+                        enabled: false
+                    },
+                    sparkline: {
+                        enabled: true
+                    },
+                },
+                tooltip: {
+                    enabled: false,
+                },
+                stroke: {
+                    width: 2,
+                    lineCap: "round",
+                },
+                series: [{
+                    color: tabler.getColor("primary"),
+                    data: [2, 11, 15, 14, 21, 20, 8, 23, 18, 14]
+                }],
+            })).render();
+        });
+        // @formatter:on
+    </script>
+    <script>
+        // @formatter:off
+        document.addEventListener("DOMContentLoaded", function () {
+            window.ApexCharts && (new ApexCharts(document.getElementById('sparkline-bounce-rate-6'), {
+                chart: {
+                    type: "line",
+                    fontFamily: 'inherit',
+                    height: 24,
+                    animations: {
+                        enabled: false
+                    },
+                    sparkline: {
+                        enabled: true
+                    },
+                },
+                tooltip: {
+                    enabled: false,
+                },
+                stroke: {
+                    width: 2,
+                    lineCap: "round",
+                },
+                series: [{
+                    color: tabler.getColor("primary"),
+                    data: [22, 12, 7, 14, 3, 21, 8, 23, 18, 14]
+                }],
+            })).render();
+        });
+        // @formatter:on
+    </script>
+</body>
+
+</html>

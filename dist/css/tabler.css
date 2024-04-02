@@ -16825,8 +16825,6 @@ Navbar brand
     gap: 0.5rem;
 }
 
-
-
 /**
 Navbar toggler
  */
@@ -16908,11 +16906,6 @@ Navbar nav
  */
 .navbar-nav {
     align-items: stretch;
-}
-.navbar-nav .nav-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 /**
