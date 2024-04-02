@@ -16825,10 +16825,7 @@ Navbar brand
     gap: 0.5rem;
 }
 
-.navbar-brand-image {
-    height: 2rem;
-    width: auto;
-}
+
 
 /**
 Navbar toggler

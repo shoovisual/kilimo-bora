@@ -23,6 +23,11 @@ body {
     font-weight: 700;
 }
 
+.navbar-brand-image {
+    height: 3rem;
+    width: auto;
+}
+
 .card-head-2 {
     font-size: 26px;
     font-weight: 600;
