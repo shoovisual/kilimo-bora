@@ -1,0 +1,50 @@
+:root {
+    --kilmo-green: #006838;
+}
+
+body {
+    font-family: "Barlow", sans-serif;
+}
+
+.card-body img {
+    stroke: #fff;
+    position: relative;
+    width: 70px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+.bg-kilimo {
+    background-color: #006838;
+}
+
+.card-head {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.card-head-2 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.sub-header-2 {
+    font-size: 12px;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.sub-header {
+    font-size: 10px;
+    padding: 0 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.card {
+    height: 100%;
+}
+
+.dropdown-menu-column {
+    min-width: 15rem;
+    padding: 10px 20px;
+}
